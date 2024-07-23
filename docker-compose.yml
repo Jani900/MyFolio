@@ -1,0 +1,9 @@
+version: "2"
+services:
+  webserver:
+    build: .
+    image: php:7.4.3-apache
+    ports:
+      - "8181:80"
+    volumes:
+      - /d/DevFolio-pro/var/www/html
